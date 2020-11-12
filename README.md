@@ -9,4 +9,4 @@
 
 - GITHUB에 올리기 전 TEST용으로 사용할 것입니다!
 
-#### GOOD LUCK :)
+#### GOOD LUCK Bro:)
