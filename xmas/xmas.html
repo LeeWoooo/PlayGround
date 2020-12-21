@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRISTMAS</title>
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+
+    <meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+    <meta property="og:title" content="우길이의 카드">
+    <meta property="og:description" content="Merry ChreistMas">
+    
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open{
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif);
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 5px white;
+
+            margin: 100px auto 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .mssagebox {
+            background-color: ivory;
+            width: 400px;
+
+            margin: auto;
+            padding: 30px;
+
+            color: brown;
+            font-size: 20px;
+            line-height: 30px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 5px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .mssagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                   
+                width: 150px;
+                height: 150px; 
+                margin: 70px auto 0 auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+            margin: 150px auto 0 auto;
+            }
+
+        }
+    </style>
+
+    <script>
+
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan(){
+            alert("앗, 어떻게 찾았지?")
+            window.location.href='https://www.youtube.com/watch?v=9ym66p0OEQs&t=357s'
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>Happy New Year:)</h1>
+        <div class="mssagebox">
+            안녕 은하야!<br />
+            올 한해도 너와 함께해서 참기쁘다<br />
+            앞으로도 매년 크리스마스를 너와 함께 보내고 싶어<br />
+            항상 내 곁에 있어줘서 고마워요.
+            <p class="from">2020.12.25 우길이가</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
